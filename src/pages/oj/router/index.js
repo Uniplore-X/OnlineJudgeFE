@@ -5,6 +5,7 @@ import storage from '@/utils/storage'
 import {STORAGE_KEY} from '@/utils/constants'
 import {sync} from 'vuex-router-sync'
 import {types, default as store} from '../../../store'
+import { labploreLogin } from '@/labplore/api'
 
 Vue.use(VueRouter)
 
@@ -26,10 +27,16 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!storage.get(STORAGE_KEY.AUTHED)) {
       Vue.prototype.$error('Please login first')
-      store.commit(types.CHANGE_MODAL_STATUS, {mode: 'login', visible: true})
-      next({
-        name: 'home'
-      })
+//      store.commit(types.CHANGE_MODAL_STATUS, {mode: 'login', visible: true})
+//      next({
+//        name: 'home'
+//      })
+      if(labploreLogin()===false){
+        store.commit(types.CHANGE_MODAL_STATUS, {mode: 'login', visible: true})
+        next({
+          name: 'home'
+        })
+      }
     } else {
       next()
     }

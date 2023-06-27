@@ -2,6 +2,7 @@ import Vue from 'vue'
 import router from './router'
 import axios from 'axios'
 import utils from '@/utils/utils'
+import { labploreLogin } from '@/labplore/api'
 
 Vue.prototype.$http = axios
 axios.defaults.baseURL = '/api'
@@ -325,7 +326,11 @@ function ajax (url, method, options) {
         reject(res)
         // // 若后端返回为登录，则为session失效，应退出当前登录用户
         if (res.data.data.startsWith('Please login')) {
-          router.push({name: 'login'})
+          //router.push({name: 'login'})
+          if(labploreLogin()===false)
+          {
+            router.push({name: 'login'})
+          }
         }
       } else {
         resolve(res)

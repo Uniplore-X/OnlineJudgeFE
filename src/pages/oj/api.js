@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import store from '@/store'
 import axios from 'axios'
+import { labploreLogin } from '@/labplore/api'
 
 Vue.prototype.$http = axios
 axios.defaults.baseURL = '/api'
@@ -297,7 +298,10 @@ function ajax (url, method, options) {
         reject(res)
         // 若后端返回为登录，则为session失效，应退出当前登录用户
         if (res.data.data.startsWith('Please login')) {
-          store.dispatch('changeModalStatus', {'mode': 'login', 'visible': true})
+          //store.dispatch('changeModalStatus', {'mode': 'login', 'visible': true})
+          if(labploreLogin()===false){
+            store.dispatch('changeModalStatus', {'mode': 'login', 'visible': true})
+          }
         }
       } else {
         resolve(res)
