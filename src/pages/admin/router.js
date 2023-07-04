@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 引入 view 组件
-import { Announcement, Conf, Contest, ContestList, Home, JudgeServer, Login,
+import { Announcement, Conf, Contest, ContestList, Home, JudgeServer, /* Login, */
   Problem, ProblemList, User, PruneTestCase, Dashboard, ProblemImportOrExport } from './views'
+
+import LabploreLogin from '@/labplore/Login.vue'
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -13,7 +16,7 @@ export default new VueRouter({
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: LabploreLogin // Login
     },
     {
       path: '/',

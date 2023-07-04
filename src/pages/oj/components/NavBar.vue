@@ -84,6 +84,7 @@
   import { mapGetters, mapActions } from 'vuex'
   import login from '@oj/views/user/Login'
   import register from '@oj/views/user/Register'
+  import { labploreLogin } from '@/labplore/api'
 
   export default {
     components: {
@@ -103,10 +104,12 @@
         }
       },
       handleBtnClick (mode) {
-        this.changeModalStatus({
-          visible: true,
-          mode: mode
-        })
+        if (mode !== 'login' || labploreLogin() === false) {
+          this.changeModalStatus({
+            visible: true,
+            mode: mode
+          })
+        }
       }
     },
     computed: {

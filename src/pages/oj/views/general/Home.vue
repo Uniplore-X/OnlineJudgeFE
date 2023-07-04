@@ -36,6 +36,7 @@
   import api from '@oj/api'
   import time from '@/utils/time'
   import { CONTEST_STATUS } from '@/utils/constants'
+  import { checkLogin } from '@/labplore/api'
 
   export default {
     name: 'home',
@@ -46,6 +47,11 @@
       return {
         contests: [],
         index: 0
+      }
+    },
+    async beforeMount () {
+      if (this.$route.query.check_login === 'true') {
+        await checkLogin()
       }
     },
     mounted () {
