@@ -52,6 +52,8 @@
     async beforeMount () {
       if (this.$route.query.check_login === 'true') {
         await checkLogin()
+      } else if (this.$route.query.re_login === 'true') {
+        await checkLogin(true)
       }
     },
     mounted () {

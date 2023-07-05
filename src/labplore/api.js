@@ -10,13 +10,17 @@ export function labploreLogin () {
   redirectWplogin()
 }
 
-export function checkLogin () {
-  return ajax('labplore/check_login', 'post')
+export function checkLogin (relogin = false) {
+  return ajax('labplore/check_login', 'get', {
+    params: {
+      relogin
+    }
+  })
 }
 
 async function redirectWplogin () {
   let params = {
-    return_uri: window.location.href
+    return_uri: window.location.href.replace('re_login=true', '')
   }
   let res = await ajax('labplore/redirect_wplogin', 'get', {
     params
