@@ -120,5 +120,120 @@ export const m = {
   Welcome_to_Login: '欢迎登录 OnlineJudge 后台管理系统',
   GO: '登录',
   username: '用户名',
-  password: '密码'
+  password: '密码',
+
+  // 用户管理、公告管理、系统配置、判题服务器、测试用例、仪表盘
+  // general/User.vue
+  ID: 'ID',
+  Username: '用户名',
+  Real_Name: '真名',
+  Option: '操作',
+  Keywords:'关键词',
+  Edit: '编辑',
+  Delete: '删除',
+  Regular_User: '普通用户',
+  Admin: '管理员',
+  Super_Admin: '超级管理员',
+  Choose_File: '选择文件',
+  Upload_requirement: '仅支持上传不含链接的csv文件, 详情请点击',
+  link: '链接',
+  Prefix: '前缀',
+  Suffix: '后缀',
+  Start_Number: '起始数字',
+  End_Number: '截止数字',
+  Password_Length: '密码长度',
+  Generate_and_Export: '生成并导出',
+  Import_All: '全部导入',
+  Reset_Data:'重置数据',
+  Cancel: '取消',
+
+  // general/Announcement.vue
+  LastUpdateTime: '最后更新时间',
+  Author: '作者',
+  Create: '创建',
+
+  // Conf.vue
+  Please_setup_SMTP_config_at_first: '请先设置SMTP配置',
+  SMTP_Server_Address:'SMTP服务器地址',
+  SMTP_Server_Port: 'SMTP服务器端口',
+  Account_Used_To_Send_Email: '用于发送电子邮件的帐户',
+  SMTP_Server_Password: 'SMTP服务器密码',
+  Save: '保存',
+  Website_Base_Url: '网站基础Url',
+  Website_Name: '网站名称',
+  Website_Name_Shortcut: '网站名称缩写',
+  Website_Footer_HTML: '网站页脚HTML',
+
+  // JudgeServer.vue
+  Status: '状态',
+  Hostname: '主机名',
+  Task_Number: '任务数',
+  CPU_Core: 'CPU核数',
+  CPU_Usage: 'CPU使用率',
+  Memory_Usage: '内存使用率',
+  Disabled: '是否禁用',
+  Options: '操作',
+  Cancle: '取消',
+  Normal: '正常',
+  Abnormal: '异常',
+
+  // PruneTestCase.vue
+  Clean_testcase_safely: '这些测试用例不属于任何问题，您可以安全地清理它们。',
+  Last_Modified: '最近修改',
+  Test_Case_ID: '测试用例ID',
+  Delete_All: '删除所有',
+
+  // ProblemList.vue
+  Operation: '操作',
+  Download_TestCase: '下载测试用例',
+  Delete_Problem: '删除问题',
+  Make_public: '设为公开',
+  Add_From_Public_Problem: '从公共问题添加',
+  Sure_to_update_the_problem: '确定要更新问题吗？',
+  Add_Contest_Problem: 'Add Contest Problem',
+
+  // Problem.vue
+  Display_ID_is_required: '显示ID为必填项',
+  Title_is_required: '标题为必填项',
+  Input_Description_is_required: '输入描述为必填项',
+  Output_Description_is_required: '输出描述为必填项',
+  Reupload_testcases: '如果您更改了问题判断方法，则需要重新上传测试用例',
+  Yes: '确认',
+  Upload_failed:'上传失败',
+  Compile_Error: '编译失败',
+
+
+  Sample_is_required: '样例为必填项',
+  Sample_input_and_output_is_required: '样例输入与输出为必填项',
+  Add_tag: '请至少添加一个标签',
+  Spj_code_is_required: 'Spj代码为必填项',
+  SPJ_code_has_not_been_successfully_compiled: 'SPJ代码编译失败',
+  Please_choose_at_least_one_language_for_problem: '请为问题选择至少一种语言',
+  Test_case_is_not_uploaded_yet:'未上传测试用例',
+  Invalid_test_case_score: '无效的测试用例分数',
+  Test_case_score_must_be_an_integer: '测试用例得分必须是整数',
+
+  // ImportAndExport.vue
+  Export_Problems_beta: '导出问题',
+  Import_QDUOJ_Problems_beta: '导入QDUOJ问题',
+  Import_FPS_Problems_beta: '导入FPS问题',
+  DisplayID: '显示ID',
+  Export: '导出',
+  Upload: '上传',
+  Successfully_imported:'导入成功',
+
+  // ContestList.vue
+  Rule_Type: '规则类型',
+  Contest_Type: '比赛类型',
+  Download_Contest_Submissions: '下载比赛提交数据',
+  Download_Accepted_Submissions: '下载已接受的提交',
+  Exclude_admin_submissions: '不包括管理员提交',
+
+  // Dashboard.vue
+  Total_Users: '用户数',
+  Today_Submissions: '今日提交数',
+  Recent_Contests: '近期比赛',
+  Release_Notes: '版本说明',
+  Upgrade_latest_enjoy: '请升级到最新版本以享受新功能',
+  New_Version: '新版本'
 }

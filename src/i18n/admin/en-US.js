@@ -120,5 +120,121 @@ export const m = {
   Welcome_to_Login: 'Welcome to Login',
   GO: 'GO',
   username: 'username',
-  password: 'password'
+  password: 'password',
+
+  // 用户管理、公告管理、系统配置、判题服务器、测试用例、仪表盘
+  // general/User.vue
+  Username: 'Username',
+  Real_Name: 'Real Name',
+  Regular_User: 'Regular User',
+  Admin: 'Admin',
+  Super_Admin: 'Super Admin',
+  Upload_requirement: 'Only support csv file without headers, check the link for details',
+  link: 'link',
+  Prefix: 'Prefix',
+  Suffix: 'Suffix',
+  Start_Number: 'Start Number',
+  End_Number: 'End Number',
+  Password_Length: 'Password Length',
+  Generate_and_Export: 'Generate & Export',
+  Import_All: 'Import All',
+  Reset_Data:'Reset Data',
+
+  // general/Announcement.vue
+  LastUpdateTime: 'LastUpdateTime',
+
+
+  // Conf.vue
+  Please_setup_SMTP_config_at_first: 'Please setup SMTP config at first',
+  SMTP_Server_Address:'SMTP Server Address',
+  SMTP_Server_Port: 'SMTP Server Port',
+  Account_Used_To_Send_Email: 'Account Used To Send Email',
+  SMTP_Server_Password: 'SMTP Server Password',
+  Save: 'Save',
+  Website_Base_Url: 'Website Base Url',
+  Website_Name: 'Website Name',
+  Website_Name_Shortcut: 'Website Name Shortcut',
+  Website_Footer_HTML: 'Website Footer HTML',
+
+  // JudgeServer.vue
+  Status: 'Status',
+  Hostname: 'Hostname',
+  Task_Number: 'Task Number',
+  CPU_Core: 'CPU Core',
+  CPU_Usage: 'CPU Usage',
+  Memory_Usage: 'Memory Usage',
+  Disabled: 'Disabled',
+  Options: 'Options',
+  Delete: 'Delete',
+  Cancle: 'Cancle',
+  Normal: 'Normal',
+  Abnormal: 'Abnormal',
+
+  // PruneTestCase.vue
+  Clean_testcase_safely: 'These test cases are not owned by any problem, you can clean them safely.',
+  Last_Modified: 'Last Modified',
+  Test_Case_ID: 'Test Case ID',
+  Option:'Option',
+  Delete_All: 'Delete All',
+
+  // ProblemList.vue
+  Keywords: 'Keywords',
+  ID: 'ID',
+  Author: 'Author',
+  Operation: 'Operation',
+  Edit: 'Edit',
+  Download_TestCase: 'Download TestCase',
+  Delete_Problem: 'Delete Problem',
+  Make_public: 'Make public',
+  Create: 'Create',
+  Add_From_Public_Problem: 'Add From Public Problem',
+  Sure_to_update_the_problem: 'Sure to update the problem?',
+  Add_Contest_Problem: 'Add Contest Problem',
+
+  // Problem.vue
+  Display_ID_is_required: 'Display ID is required',
+  Title_is_required: 'Title is required',
+  Input_Description_is_required: 'Input Description is required',
+  Output_Description_is_required: 'Output Description is required',
+  Reupload_testcases: 'If you change problem judge method, you need to re-upload test cases',
+  Yes: 'Yes',
+  Cancel: 'Cancel',
+  Upload_failed:'Upload failed',
+  Compile_Error: 'Compile Error',
+
+
+  Sample_is_required: 'Sample is required',
+  Sample_input_and_output_is_required: 'Sample input and output is required',
+  Add_tag: 'Please add at least one tag',
+  Spj_code_is_required: 'Spj code is required',
+  SPJ_code_has_not_been_successfully_compiled: 'SPJ code has not been successfully compiled',
+  Please_choose_at_least_one_language_for_problem: 'Please choose at least one language for problem',
+  Test_case_is_not_uploaded_yet:'Test case is not uploaded yet',
+  Invalid_test_case_score: 'Invalid test case score',
+  Test_case_score_must_be_an_integer: 'Test case score must be an integer',
+
+  // ImportAndExport.vue
+  Export_Problems_beta: 'Export Problems (beta)',
+  Import_QDUOJ_Problems_beta: 'Import QDUOJ Problems (beta)',
+  Import_FPS_Problems_beta: 'Import FPS Problems (beta)',
+  DisplayID: 'DisplayID',
+  Export: 'Export',
+  Choose_File: 'Choose File',
+  Upload: 'Upload',
+  Successfully_imported:'Successfully imported problems',
+
+  // ContestList.vue
+  Rule_Type: 'Rule Type',
+  Contest_Type: 'Contest Type',
+  Download_Contest_Submissions: 'Download Contest Submissions',
+  Download_Accepted_Submissions: 'Download Accepted Submissions',
+  Exclude_admin_submissions: 'Exclude admin submissions',
+
+  // Dashboard.vue
+  Total_Users: 'Total Users',
+  Today_Submissions: 'Today Submissions',
+  Recent_Contests: 'Recent Contests',
+  Release_Notes: 'Release Notes',
+  Upgrade_latest_enjoy: 'Please upgrade to the latest version to enjoy the new features.',
+  New_Version: 'New Version'
 }

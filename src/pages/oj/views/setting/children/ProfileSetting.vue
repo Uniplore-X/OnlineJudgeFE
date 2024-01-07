@@ -52,9 +52,9 @@
       </div>
     </template>
     <Modal v-model="uploadModalVisible"
-           title="Upload the avatar">
+           :title="$t('m.Upload_the_avatar')">
       <div class="upload-modal">
-        <p class="notice">Your avatar will be set to:</p>
+        <p class="notice">{{$t('m.Your_avatar_will_be_set_to')}}</p>
         <img :src="uploadImgSrc"/>
       </div>
       <div slot="footer">
@@ -66,16 +66,16 @@
     <Form ref="formProfile" :model="formProfile">
       <Row type="flex" :gutter="30" justify="space-around">
         <Col :span="11">
-          <FormItem label="Real Name">
+          <FormItem :label="$t('m.Real_Name')">
             <Input v-model="formProfile.real_name"/>
           </FormItem>
-          <Form-item label="School">
+          <Form-item :label="$t('m.School')">
             <Input v-model="formProfile.school"/>
           </Form-item>
-          <Form-item label="Major">
+          <Form-item :label="$t('m.Major')">
             <Input v-model="formProfile.major"/>
           </Form-item>
-          <FormItem label="Language">
+          <FormItem :label="$t('m.language')">
             <Select v-model="formProfile.language">
               <Option v-for="lang in languages" :key="lang.value" :value="lang.value">{{lang.label}}</Option>
             </Select>
@@ -86,13 +86,13 @@
         </Col>
 
         <Col :span="11">
-          <Form-item label="Mood">
+          <Form-item :label="$t('m.Mood')">
             <Input v-model="formProfile.mood"/>
           </Form-item>
-          <Form-item label="Blog">
+          <Form-item :label="$t('m.Blog')">
             <Input v-model="formProfile.blog"/>
           </Form-item>
-          <Form-item label="Github">
+          <Form-item :label="$t('m.Github')">
             <Input v-model="formProfile.github"/>
           </Form-item>
         </Col>

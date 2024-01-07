@@ -6,7 +6,7 @@
         <Card :padding="20" class="flex-child">
           <span slot="title" style="line-height: 20px">{{session.ip}}</span>
           <div slot="extra">
-            <Tag v-if="session.current_session" color="green">Current</Tag>
+            <Tag v-if="session.current_session" color="green">{{$t('m.Current')}}</Tag>
             <Button v-else
                     type="warning"
                     size="small"
@@ -14,13 +14,13 @@
             </Button>
           </div>
           <Form :label-width="100">
-            <FormItem label="OS :" class="item">
+            <FormItem :label="$t('m.OS')+ ' :'" class="item">
               {{session.user_agent | platform}}
             </FormItem>
-            <FormItem label="Browser :" class="item">
+            <FormItem :label="$t('m.Browser')+ ' :'" class="item">
               {{session.user_agent | browser}}
             </FormItem>
-            <FormItem label="Last Activity :" class="item">
+            <FormItem :label="$t('m.Last_Activity')+ ' :'" class="item">
               {{session.last_activity | localtime }}
             </FormItem>
           </Form>
@@ -44,12 +44,12 @@
         </FormItem>
         <template v-if="!loadingQRcode">
           <FormItem style="width: 250px">
-            <Input v-model="formTwoFactor.code" placeholder="Enter the code from your application"/>
+            <Input v-model="formTwoFactor.code" :placeholder="$t('m.Enter_the_code_from_your_application:')"/>
           </FormItem>
           <Button type="primary"
                   :loading="loadingBtn"
                   @click="updateTFA(false)"
-                  v-if="!TFAOpened">Open TFA
+                  v-if="!TFAOpened">{{$t('m.Open_TFA')}}
           </Button>
           <Button type="error"
                   :loading="loadingBtn"

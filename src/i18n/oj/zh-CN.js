@@ -257,5 +257,39 @@ export const m = {
   UserHomeserSubmissions: '提交次数',
   UserHomeScore: '分数',
   List_Solved_Problems: '已解决问题的列表',
-  UserHomeIntro: '这个家伙太懒了，还没有做题呢...'
+  UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
+
+  // 我的主页、我的提交、我的设置、安全设置
+  //AccountSetting.vue
+  Old_Password: '旧密码',
+  New_Password: '新密码',
+  Confirm_New_Password: '确认新密码',
+  Current_Password: '当前密码',
+  Old_Email: '旧邮箱',
+  New_Email: '新邮箱',
+  Two_Factor_Auth: '双因素身份验证',
+  Login_after_5s:'您需要在5秒钟后再次登录',
+
+  // setting/children/ProfileSetting.vue
+  Upload_the_avatar: '上传头像',
+  Your_avatar_will_be_set_to:'您的头像将设置为：',
+  Real_Name: '真名',
+  Mood: '个性签名',
+  School: '学校',
+  Blog: '博客',
+  Major: '专业',
+  Github: 'Github',
+  language: '语言',
+
+  // setting/children/Security.vue
+  Current: '当前',
+  OS: '操作系统',
+  Browser: '浏览器',
+  Last_Activity: '上一次登录',
+  Enter_the_code_from_your_application: '输入来自您的应用程序的代码',
+  Open_TFA: '开启TFA',
+
+  //UserHome.vue
+  Id_does_not_exist_click_the_button: '如果您发现以下问题id不存在,试着点击按钮', 
+  regenerate: '重新生成'
 }
