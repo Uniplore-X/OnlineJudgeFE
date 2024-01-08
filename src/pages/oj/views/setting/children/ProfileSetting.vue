@@ -75,7 +75,7 @@
           <Form-item :label="$t('m.Major')">
             <Input v-model="formProfile.major"/>
           </Form-item>
-          <FormItem :label="$t('m.language')">
+          <FormItem :label="$t('m.Language')">
             <Select v-model="formProfile.language">
               <Option v-for="lang in languages" :key="lang.value" :value="lang.value">{{lang.label}}</Option>
             </Select>
