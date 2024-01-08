@@ -128,7 +128,7 @@ export const m = {
   Username: '用户名',
   Real_Name: '真名',
   Option: '操作',
-  Keywords:'关键词',
+  Keywords: '关键词',
   Edit: '编辑',
   Delete: '删除',
   Regular_User: '普通用户',
@@ -144,7 +144,7 @@ export const m = {
   Password_Length: '密码长度',
   Generate_and_Export: '生成并导出',
   Import_All: '全部导入',
-  Reset_Data:'重置数据',
+  Reset_Data: '重置数据',
   Cancel: '取消',
 
   // general/Announcement.vue
@@ -155,7 +155,7 @@ export const m = {
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: '请先设置SMTP配置',
-  SMTP_Server_Address:'SMTP服务器地址',
+  SMTP_Server_Address: 'SMTP服务器地址',
   SMTP_Server_Port: 'SMTP服务器端口',
   Account_Used_To_Send_Email: '用于发送电子邮件的帐户',
   SMTP_Server_Password: 'SMTP服务器密码',
@@ -200,7 +200,7 @@ export const m = {
   Output_Description_is_required: '输出描述为必填项',
   Reupload_testcases: '如果您更改了问题判断方法，则需要重新上传测试用例',
   Yes: '确认',
-  Upload_failed:'上传失败',
+  Upload_failed: '上传失败',
   Compile_Error: '编译失败',
   Standard_IO: '标准IO',
   File_IO: '文件IO',
@@ -212,7 +212,7 @@ export const m = {
   Spj_code_is_required: 'Spj代码为必填项',
   SPJ_code_has_not_been_successfully_compiled: 'SPJ代码编译失败',
   Please_choose_at_least_one_language_for_problem: '请为问题选择至少一种语言',
-  Test_case_is_not_uploaded_yet:'未上传测试用例',
+  Test_case_is_not_uploaded_yet: '未上传测试用例',
   Invalid_test_case_score: '无效的测试用例分数',
   Test_case_score_must_be_an_integer: '测试用例得分必须是整数',
 
@@ -223,7 +223,7 @@ export const m = {
   DisplayID: '显示ID',
   Export: '导出',
   Upload: '上传',
-  Successfully_imported:'导入成功',
+  Successfully_imported: '导入成功',
 
   // ContestList.vue
   Rule_Type: '规则类型',
@@ -241,7 +241,7 @@ export const m = {
   New_Version: '新版本',
   Details: '详情',
 
-  //AddPublicProblem.vue
+  // AddPublicProblem.vue
   Input_display_ID: '请输入竞赛题的显示ID',
   Confirm: '确认',
   Add_the_problem: '添加问题'

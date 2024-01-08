@@ -283,7 +283,7 @@
         rules: {
           _id: {required: true, message: this.$t('m.Display_ID_is_required'), trigger: 'blur'},
           title: {required: true, message: this.$t('m.Title_is_required'), trigger: 'blur'},
-          input_description: {required: true, this.message: $t('m.Input_Description_is_required'), trigger: 'blur'},
+          input_description: {required: true, message: this.$t('m.Input_Description_is_required'), trigger: 'blur'},
           output_description: {required: true, message: this.$t('m.Output_Description_is_required'), trigger: 'blur'}
         },
         loadingCompile: false,
@@ -420,7 +420,7 @@
         if (this.testCaseUploaded) {
           this.$confirm(this.$t('m.Reupload_testcases'), 'Warning', {
             confirmButtonText: this.$t('m.Yes'),
-            cancelButtonText:this.$t('m.Cancel'),
+            cancelButtonText: this.$t('m.Cancel'),
             type: 'warning'
           }).then(() => {
             this.problem.spj = !this.problem.spj

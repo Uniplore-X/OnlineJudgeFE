@@ -260,7 +260,7 @@ export const m = {
   UserHomeIntro: 'The guy is so lazy that has not solved any problem yet.',
 
   // 我的主页、我的提交、我的设置、安全设置
-  //AccountSetting.vue
+  // AccountSetting.vue
   Old_Password: 'Old Password',
   New_Password: 'New Password',
   Confirm_New_Password: 'Confirm New Password',
@@ -268,11 +268,11 @@ export const m = {
   Old_Email: 'Old Email',
   New_Email: 'New Email',
   Two_Factor_Auth: 'Two Factor Auth',
-  Login_after_5s:'You will need to login again after 5 seconds..',
+  Login_after_5s: 'You will need to login again after 5 seconds..',
 
   // setting/children/ProfileSetting.vue
   Upload_the_avatar: 'Upload the avatar',
-  Your_avatar_will_be_set_to:'Your avatar will be set to:',
+  Your_avatar_will_be_set_to: 'Your avatar will be set to: ',
   Real_Name: 'Real Name',
   Mood: 'Mood',
   School: 'School',
@@ -287,13 +287,13 @@ export const m = {
   Revoke: 'Revoke',
   OS: 'OS',
   Browser: 'Browser',
-  Last_Activity: 'Last Activity :',
+  Last_Activity: 'Last Activity : ',
   Enter_the_code_from_your_application: 'Enter the code from your application',
   Open_TFA: 'Open TFA',
   Revoke_Session: 'Are you sure to revoke the session?',
   Confirm: 'Confirm',
 
-  //UserHome.vue
+  // UserHome.vue
   Id_does_not_exist_click_the_button: 'If you find the following problem id does not exist,try to click the button.',
   regenerate: 'regenerate'
 

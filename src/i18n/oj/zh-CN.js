@@ -260,7 +260,7 @@ export const m = {
   UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
 
   // 我的主页、我的提交、我的设置、安全设置
-  //AccountSetting.vue
+  // AccountSetting.vue
   Old_Password: '旧密码',
   New_Password: '新密码',
   Confirm_New_Password: '确认新密码',
@@ -268,11 +268,11 @@ export const m = {
   Old_Email: '旧邮箱',
   New_Email: '新邮箱',
   Two_Factor_Auth: '双因素身份验证',
-  Login_after_5s:'您需要在5秒钟后再次登录',
+  Login_after_5s: '您需要在5秒钟后再次登录',
 
   // setting/children/ProfileSetting.vue
   Upload_the_avatar: '上传头像',
-  Your_avatar_will_be_set_to:'您的头像将设置为：',
+  Your_avatar_will_be_set_to: '您的头像将设置为：',
   Real_Name: '真名',
   Mood: '格言',
   School: '学校',
@@ -294,7 +294,7 @@ export const m = {
   Revoke_Session: '是否确定要取消该会话?',
   Confirm: '确认',
 
-  //UserHome.vue
+  // UserHome.vue
   Id_does_not_exist_click_the_button: '如果您发现以下问题id不存在,试着点击按钮',
   regenerate: '重新生成'
 }

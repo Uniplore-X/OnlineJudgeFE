@@ -138,7 +138,7 @@ export const m = {
   Password_Length: 'Password Length',
   Generate_and_Export: 'Generate & Export',
   Import_All: 'Import All',
-  Reset_Data:'Reset Data',
+  Reset_Data: 'Reset Data',
 
   // general/Announcement.vue
   LastUpdateTime: 'LastUpdateTime',
@@ -146,7 +146,7 @@ export const m = {
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: 'Please setup SMTP config at first',
-  SMTP_Server_Address:'SMTP Server Address',
+  SMTP_Server_Address: 'SMTP Server Address',
   SMTP_Server_Port: 'SMTP Server Port',
   Account_Used_To_Send_Email: 'Account Used To Send Email',
   SMTP_Server_Password: 'SMTP Server Password',
@@ -174,7 +174,7 @@ export const m = {
   Clean_testcase_safely: 'These test cases are not owned by any problem, you can clean them safely.',
   Last_Modified: 'Last Modified',
   Test_Case_ID: 'Test Case ID',
-  Option:'Option',
+  Option: 'Option',
   Delete_All: 'Delete All',
 
   // ProblemList.vue
@@ -211,7 +211,7 @@ export const m = {
   Spj_code_is_required: 'Spj code is required',
   SPJ_code_has_not_been_successfully_compiled: 'SPJ code has not been successfully compiled',
   Please_choose_at_least_one_language_for_problem: 'Please choose at least one language for problem',
-  Test_case_is_not_uploaded_yet:'Test case is not uploaded yet',
+  Test_case_is_not_uploaded_yet: 'Test case is not uploaded yet',
   Invalid_test_case_score: 'Invalid test case score',
   Test_case_score_must_be_an_integer: 'Test case score must be an integer',
 
@@ -223,7 +223,7 @@ export const m = {
   Export: 'Export',
   Choose_File: 'Choose File',
   Upload: 'Upload',
-  Successfully_imported:'Successfully imported problems',
+  Successfully_imported: 'Successfully imported problems',
 
   // ContestList.vue
   Rule_Type: 'Rule Type',
@@ -241,7 +241,7 @@ export const m = {
   New_Version: 'New Version',
   Details: 'Details',
 
-//AddPublicProblem.vue
+// AddPublicProblem.vue
 Input_display_ID: 'Please input display id for the contest problem',
 Confirm: 'Confirm',
 Add_the_problem: 'Add the problem'
