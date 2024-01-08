@@ -69,8 +69,8 @@
         :auto-upload="false"
         :on-success="uploadSucceeded"
         :on-error="uploadFailed">
-        <el-button size="small" type="primary" icon="el-icon-fa-upload" slot="trigger">Choose File</el-button>
-        <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload('QDU')">Upload</el-button>
+        <el-button size="small" type="primary" icon="el-icon-fa-upload" slot="trigger">{{$t('m.Choose_File')}}</el-button>
+        <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload('QDU')">{{$t('m.Upload')}}</el-button>
       </el-upload>
     </panel>
 
@@ -154,12 +154,12 @@
         if (response.error) {
           this.$error(response.data)
         } else {
-          this.$success('$t(\'m.Successfully_imported\')' + response.data.import_count)
+          this.$success($t('m.Successfully_imported') + response.data.import_count)
           this.getProblems()
         }
       },
       uploadFailed () {
-        this.$error('$t(\'m.Upload_failed\')')
+        this.$error($t('m.Upload_failed'))
       }
     },
     watch: {

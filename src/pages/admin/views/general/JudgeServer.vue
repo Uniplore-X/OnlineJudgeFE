@@ -27,7 +27,7 @@
           <template slot-scope="scope">
             <el-tag
               :type="scope.row.status === 'normal' ? 'success' : 'danger'">
-              {{ scope.row.status === 'normal' ? '$t("m.Normal")' : '$t("m.Abnormal")' }}
+              {{ scope.row.status === 'normal' ? 'Normal' : 'Abnormal' }}
             </el-tag>
           </template>
         </el-table-column>
@@ -97,8 +97,8 @@
       },
       deleteJudgeServer (hostname) {
         this.$confirm('If you delete this judge server, it can\'t be used until next heartbeat', 'Warning', {
-          confirmButtonText: '$t(\'m.Delete\')',
-          cancelButtonText: '$t(\'m.Cancel\')',
+          confirmButtonText: $t('m.Delete'),
+          cancelButtonText: $t('m.Cancel'),
           type: 'warning'
         }).then(() => {
           api.deleteJudgeServer(hostname).then(res =>

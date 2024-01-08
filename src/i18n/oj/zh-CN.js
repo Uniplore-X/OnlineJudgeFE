@@ -274,22 +274,27 @@ export const m = {
   Upload_the_avatar: '上传头像',
   Your_avatar_will_be_set_to:'您的头像将设置为：',
   Real_Name: '真名',
-  Mood: '个性签名',
+  Mood: '格言',
   School: '学校',
   Blog: '博客',
   Major: '专业',
   Github: 'Github',
   language: '语言',
+  Drop_and_Select: '拖到此处或单击手动选择',
+  Save_All: '全部保存',
 
-  // setting/children/Security.vue
+  // setting/children/SecuritySetting.vue
   Current: '当前',
+  Revoke: '撤销',
   OS: '操作系统',
   Browser: '浏览器',
   Last_Activity: '上一次登录',
   Enter_the_code_from_your_application: '输入来自您的应用程序的代码',
   Open_TFA: '开启TFA',
+  Revoke_Session: '是否确定要取消该会话?',
+  Confirm: '确认',
 
   //UserHome.vue
-  Id_does_not_exist_click_the_button: '如果您发现以下问题id不存在,试着点击按钮', 
+  Id_does_not_exist_click_the_button: '如果您发现以下问题id不存在,试着点击按钮',
   regenerate: '重新生成'
 }

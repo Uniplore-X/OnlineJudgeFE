@@ -142,7 +142,7 @@ export const m = {
 
   // general/Announcement.vue
   LastUpdateTime: 'LastUpdateTime',
-
+  Create_Announcement: 'Create Announcement',
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: 'Please setup SMTP config at first',
@@ -199,8 +199,10 @@ export const m = {
   Reupload_testcases: 'If you change problem judge method, you need to re-upload test cases',
   Yes: 'Yes',
   Cancel: 'Cancel',
-  Upload_failed:'Upload failed',
+  Upload_failed: 'Upload failed',
   Compile_Error: 'Compile Error',
+  Standard_IO: 'Standard IO',
+  File_IO: 'File IO',
 
 
   Sample_is_required: 'Sample is required',
@@ -236,5 +238,11 @@ export const m = {
   Recent_Contests: 'Recent Contests',
   Release_Notes: 'Release Notes',
   Upgrade_latest_enjoy: 'Please upgrade to the latest version to enjoy the new features.',
-  New_Version: 'New Version'
+  New_Version: 'New Version',
+  Details: 'Details',
+
+//AddPublicProblem.vue
+Input_display_ID: 'Please input display id for the contest problem',
+Confirm: 'Confirm',
+Add_the_problem: 'Add the problem'
 }

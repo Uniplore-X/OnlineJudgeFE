@@ -93,7 +93,7 @@
     },
     data () {
       return {
-        title: 'Create Contest',
+        title: $t('m.Create_Contest'),
         disableRuleType: false,
         contest: {
           title: '',

@@ -9,7 +9,7 @@
               :before-upload="handleSelectFile">
         <div style="padding: 30px 0">
           <Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>
-          <p>Drop here, or click to select manually</p>
+          <p>{{$t('m.Drop_and_Select')}}</p>
         </div>
       </Upload>
     </template>
@@ -81,7 +81,7 @@
             </Select>
           </FormItem>
           <Form-item>
-            <Button type="primary" @click="updateProfile" :loading="loadingSaveBtn">Save All</Button>
+            <Button type="primary" @click="updateProfile" :loading="loadingSaveBtn"><p>{{$t('m.Save_ALL')}}</p></Button>
           </Form-item>
         </Col>
 

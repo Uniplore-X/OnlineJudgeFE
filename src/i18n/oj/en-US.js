@@ -279,17 +279,22 @@ export const m = {
   Blog: 'Blog',
   Major: 'Major',
   Github: 'Github',
+  Drop_and_Select: 'Drop here, or click to select manually',
+  Save_All: 'Save ALL',
 
   // setting/children/Security.vue
   Current: 'Current',
+  Revoke: 'Revoke',
   OS: 'OS',
   Browser: 'Browser',
   Last_Activity: 'Last Activity :',
   Enter_the_code_from_your_application: 'Enter the code from your application',
   Open_TFA: 'Open TFA',
+  Revoke_Session: 'Are you sure to revoke the session?',
+  Confirm: 'Confirm',
 
   //UserHome.vue
-  Id_does_not_exist_click_the_button: 'If you find the following problem id does not exist,try to click the button.', 
+  Id_does_not_exist_click_the_button: 'If you find the following problem id does not exist,try to click the button.',
   regenerate: 'regenerate'
-  
+
 }

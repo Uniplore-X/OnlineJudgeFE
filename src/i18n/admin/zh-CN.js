@@ -58,7 +58,7 @@ export const m = {
   Last_Heartbeat: '上一次心跳',
   Create_Time: '创建时间',
   // PruneTestCase
-  Test_Case_Prune_Test_Case: '精简测试用例',
+  Test_Case_Prune_Test_Case: '删除测试用例',
   // Problem.vue
   Display_ID: '显示 ID',
   Title: '题目',
@@ -151,6 +151,7 @@ export const m = {
   LastUpdateTime: '最后更新时间',
   Author: '作者',
   Create: '创建',
+  Create_Announcement: '创建公告',
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: '请先设置SMTP配置',
@@ -201,6 +202,8 @@ export const m = {
   Yes: '确认',
   Upload_failed:'上传失败',
   Compile_Error: '编译失败',
+  Standard_IO: '标准IO',
+  File_IO: '文件IO',
 
 
   Sample_is_required: '样例为必填项',
@@ -235,5 +238,11 @@ export const m = {
   Recent_Contests: '近期比赛',
   Release_Notes: '版本说明',
   Upgrade_latest_enjoy: '请升级到最新版本以享受新功能',
-  New_Version: '新版本'
+  New_Version: '新版本',
+  Details: '详情',
+
+  //AddPublicProblem.vue
+  Input_display_ID: '请输入竞赛题的显示ID',
+  Confirm: '确认',
+  Add_the_problem: '添加问题'
 }

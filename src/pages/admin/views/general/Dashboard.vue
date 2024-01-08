@@ -79,7 +79,7 @@
               <span v-else>{{release.title}}</span>
             </template>
             <p>Level: {{release.level}}</p>
-            <p>Details: </p>
+            <p>{{$t('m.Details')}}: </p>
             <div class="release-body">
               <ul v-for="detail in release.details" :key="detail">
                 <li v-html="detail"></li>

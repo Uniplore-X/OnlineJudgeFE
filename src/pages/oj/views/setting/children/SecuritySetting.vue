@@ -10,7 +10,7 @@
             <Button v-else
                     type="warning"
                     size="small"
-                    @click="deleteSession(session.session_key)">Revoke
+                    @click="deleteSession(session.session_key)">{{$t('m.Revoke')}}
             </Button>
           </div>
           <Form :label-width="100">
@@ -44,7 +44,7 @@
         </FormItem>
         <template v-if="!loadingQRcode">
           <FormItem style="width: 250px">
-            <Input v-model="formTwoFactor.code" :placeholder="$t('m.Enter_the_code_from_your_application:')"/>
+            <Input v-model="formTwoFactor.code" :placeholder="$t('m.Enter_the_code_from_your_application')"/>
           </FormItem>
           <Button type="primary"
                   :loading="loadingBtn"
@@ -123,8 +123,8 @@
       },
       deleteSession (sessionKey) {
         this.$Modal.confirm({
-          title: 'Confirm',
-          content: 'Are you sure to revoke the session?',
+          title: $t('m.Confirm'),
+          content: $t('m.Revoke_Session'),
           onOk: () => {
             api.deleteSession(sessionKey).then(res => {
               this.getSessions()

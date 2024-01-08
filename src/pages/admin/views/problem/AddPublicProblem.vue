@@ -26,7 +26,7 @@
         width="100"
         fixed="right">
         <template slot-scope="{row}">
-          <icon-btn icon="plus" name="Add the problem"
+          <icon-btn icon="plus" :name="$t('m.Add_the_problem')"
                     @click.native="handleAddProblem(row.id)"></icon-btn>
         </template>
       </el-table-column>
@@ -82,7 +82,7 @@
         })
       },
       handleAddProblem (problemID) {
-        this.$prompt('Please input display id for the contest problem', 'confirm').then(({value}) => {
+        this.$prompt('{{$t("m.Input_display_ID")}}', '{{$t("m.Confirm")}}').then(({value}) => {
           let data = {
             problem_id: problemID,
             contest_id: this.contestID,

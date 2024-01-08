@@ -209,7 +209,7 @@
         })
       },
       makeContestProblemPublic (problemID) {
-        this.$prompt('Please input display id for the public problem', 'confirm').then(({value}) => {
+        this.$prompt({{$t('m.Input_display_ID')}}, {{$t('m.Confirm')}}).then(({value}) => {
           api.makeContestProblemPublic({id: problemID, display_id: value}).catch()
         }, () => {
         })
