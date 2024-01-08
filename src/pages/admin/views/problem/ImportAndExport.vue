@@ -154,12 +154,12 @@
         if (response.error) {
           this.$error(response.data)
         } else {
-          this.$success($t('m.Successfully_imported') + response.data.import_count)
+          this.$success(this.$t('m.Successfully_imported') + response.data.import_count)
           this.getProblems()
         }
       },
       uploadFailed () {
-        this.$error($t('m.Upload_failed'))
+        this.$error(this.$t('m.Upload_failed'))
       }
     },
     watch: {

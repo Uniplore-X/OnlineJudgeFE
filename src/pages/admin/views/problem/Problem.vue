@@ -281,10 +281,10 @@
     data () {
       return {
         rules: {
-          _id: {required: true, message: $t('m.Display_ID_is_required'), trigger: 'blur'},
-          title: {required: true, message: $t('m.Title_is_required'), trigger: 'blur'},
-          input_description: {required: true, message: $t('m.Input_Description_is_required'), trigger: 'blur'},
-          output_description: {required: true, message: $t('m.Output_Description_is_required'), trigger: 'blur'}
+          _id: {required: true, message: this.$t('m.Display_ID_is_required'), trigger: 'blur'},
+          title: {required: true, message: this.$t('m.Title_is_required'), trigger: 'blur'},
+          input_description: {required: true, this.message: $t('m.Input_Description_is_required'), trigger: 'blur'},
+          output_description: {required: true, message: this.$t('m.Output_Description_is_required'), trigger: 'blur'}
         },
         loadingCompile: false,
         mode: '',
@@ -418,9 +418,9 @@
     methods: {
       switchSpj () {
         if (this.testCaseUploaded) {
-          this.$confirm($t('m.Reupload_testcases'), 'Warning', {
-            confirmButtonText: $t('m.Yes'),
-            cancelButtonText: $t('m.Cancel'),
+          this.$confirm(this.$t('m.Reupload_testcases'), 'Warning', {
+            confirmButtonText: this.$t('m.Yes'),
+            cancelButtonText:this.$t('m.Cancel'),
             type: 'warning'
           }).then(() => {
             this.problem.spj = !this.problem.spj
@@ -480,7 +480,7 @@
         this.problem.test_case_id = response.data.id
       },
       uploadFailed () {
-        this.$error($t('m.Upload_failed'))
+        this.$error(this.$t('m.Upload_failed'))
       },
       compileSPJ () {
         let data = {
@@ -498,7 +498,7 @@
           this.problem.spj_compile_ok = false
           const h = this.$createElement
           this.$msgbox({
-            title: $t('m.Compile_Error'),
+            title: this.$t('m.Compile_Error'),
             type: 'error',
             message: h('pre', err.data.data),
             showCancelButton: false,
@@ -509,26 +509,26 @@
       },
       submit () {
         if (!this.problem.samples.length) {
-          this.$error($t('m.Sample_is_required'))
+          this.$error(this.$t('m.Sample_is_required'))
           return
         }
         for (let sample of this.problem.samples) {
           if (!sample.input || !sample.output) {
-            this.$error($t('m.Sample_input_and_output_is_required'))
+            this.$error(this.$t('m.Sample_input_and_output_is_required'))
             return
           }
         }
         if (!this.problem.tags.length) {
-          this.error.tags = $t('m.Add_tag')
+          this.error.tags = this.$t('m.Add_tag')
           this.$error(this.error.tags)
           return
         }
         if (this.problem.spj) {
           if (!this.problem.spj_code) {
-            this.error.spj = $t('m.Spj_code_is_required')
+            this.error.spj = this.$t('m.Spj_code_is_required')
             this.$error(this.error.spj)
           } else if (!this.problem.spj_compile_ok) {
-            this.error.spj = $t('m.SPJ_code_has_not_been_successfully_compiled')
+            this.error.spj = this.$t('m.SPJ_code_has_not_been_successfully_compiled')
           }
           if (this.error.spj) {
             this.$error(this.error.spj)
@@ -536,12 +536,12 @@
           }
         }
         if (!this.problem.languages.length) {
-          this.error.languages = $t('m.Please_choose_at_least_one_language_for_problem')
+          this.error.languages = this.$t('m.Please_choose_at_least_one_language_for_problem')
           this.$error(this.error.languages)
           return
         }
         if (!this.testCaseUploaded) {
-          this.error.testCase = $t('m.Test_case_is_not_uploaded_yet')
+          this.error.testCase = this.$t('m.Test_case_is_not_uploaded_yet')
           this.$error(this.error.testCase)
           return
         }
@@ -549,11 +549,11 @@
           for (let item of this.problem.test_case_score) {
             try {
               if (parseInt(item.score) <= 0) {
-                this.$error($t('m.Invalid_test_case_score'))
+                this.$error(this.$t('m.Invalid_test_case_score'))
                 return
               }
             } catch (e) {
-              this.$error($t('m.Test_case_score_must_be_an_integer'))
+              this.$error(this.$t('m.Test_case_score_must_be_an_integer'))
               return
             }
           }

@@ -123,8 +123,8 @@
       },
       deleteSession (sessionKey) {
         this.$Modal.confirm({
-          title: $t('m.Confirm'),
-          content: $t('m.Revoke_Session'),
+          title: this.$t('m.Confirm'),
+          content: this.$t('m.Revoke_Session'),
           onOk: () => {
             api.deleteSession(sessionKey).then(res => {
               this.getSessions()

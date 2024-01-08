@@ -97,8 +97,8 @@
       },
       deleteJudgeServer (hostname) {
         this.$confirm('If you delete this judge server, it can\'t be used until next heartbeat', 'Warning', {
-          confirmButtonText: $t('m.Delete'),
-          cancelButtonText: $t('m.Cancel'),
+          confirmButtonText: this.$t('m.Delete'),
+          cancelButtonText: this.$t('m.Cancel'),
           type: 'warning'
         }).then(() => {
           api.deleteJudgeServer(hostname).then(res =>

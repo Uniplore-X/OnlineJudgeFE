@@ -82,7 +82,7 @@
         })
       },
       handleAddProblem (problemID) {
-        this.$prompt('{{$t("m.Input_display_ID")}}', '{{$t("m.Confirm")}}').then(({value}) => {
+        this.$prompt(this.$t("m.Input_display_ID"), this.$t("m.Confirm")).then(({value}) => {
           let data = {
             problem_id: problemID,
             contest_id: this.contestID,
