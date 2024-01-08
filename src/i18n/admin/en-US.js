@@ -244,5 +244,11 @@ export const m = {
 // AddPublicProblem.vue
 Input_display_ID: 'Please input display id for the contest problem',
 Confirm: 'Confirm',
-Add_the_problem: 'Add the problem'
+Add_the_problem: 'Add the problem',
+
+  // Announcement.vue
+  Create_Announcement: 'Create Announcement',
+
+  // Contest.vue
+  Edit_Contest: 'Edit Contest'
 }

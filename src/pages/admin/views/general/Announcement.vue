@@ -243,7 +243,7 @@
             }
           })
         } else {
-          this.announcementDialogTitle = 'Create Announcement'
+          this.announcementDialogTitle = this.$t('m.Create_Announcement')
           this.announcement.title = ''
           this.announcement.visible = true
           this.announcement.content = ''

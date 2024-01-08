@@ -81,7 +81,7 @@
             </Select>
           </FormItem>
           <Form-item>
-            <Button type="primary" @click="updateProfile" :loading="loadingSaveBtn"><p>{{$t('m.Save_ALL')}}</p></Button>
+            <Button type="primary" @click="updateProfile" :loading="loadingSaveBtn"><p>{{$t('m.Save_All')}}</p></Button>
           </Form-item>
         </Col>
 

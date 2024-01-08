@@ -244,5 +244,11 @@ export const m = {
   // AddPublicProblem.vue
   Input_display_ID: '请输入竞赛题的显示ID',
   Confirm: '确认',
-  Add_the_problem: '添加问题'
+  Add_the_problem: '添加问题',
+
+  // Announcement.vue
+  Create_Announcement: '创建公告',
+
+    // Contest.vue
+    Edit_Contest: '编辑比赛'
 }
