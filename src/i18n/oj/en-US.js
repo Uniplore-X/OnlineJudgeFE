@@ -295,6 +295,9 @@ export const m = {
 
   // UserHome.vue
   Id_does_not_exist_click_the_button: 'If you find the following problem id does not exist,try to click the button.',
-  regenerate: 'regenerate'
+  regenerate: 'regenerate',
+
+  // ProblemList.vue
+  Keyword: 'Keyword'
 
 }

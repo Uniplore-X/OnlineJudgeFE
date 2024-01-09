@@ -185,6 +185,7 @@ export const m = {
   Edit: 'Edit',
   Download_TestCase: 'Download TestCase',
   Delete_Problem: 'Delete Problem',
+  Confirm_delete_problem: 'Sure to delete this problem? The associated submissions will be deleted as well.',
   Make_public: 'Make public',
   Create: 'Create',
   Add_From_Public_Problem: 'Add From Public Problem',
@@ -203,6 +204,8 @@ export const m = {
   Compile_Error: 'Compile Error',
   Standard_IO: 'Standard IO',
   File_IO: 'File IO',
+  Sample: 'Sample',
+  Problem_Type: 'Type',
 
 
   Sample_is_required: 'Sample is required',
@@ -245,9 +248,6 @@ export const m = {
 Input_display_ID: 'Please input display id for the contest problem',
 Confirm: 'Confirm',
 Add_the_problem: 'Add the problem',
-
-  // Announcement.vue
-  Create_Announcement: 'Create Announcement',
 
   // Contest.vue
   Edit_Contest: 'Edit Contest'

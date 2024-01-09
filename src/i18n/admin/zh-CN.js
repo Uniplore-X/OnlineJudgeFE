@@ -74,8 +74,8 @@ export const m = {
   Output_Samples: '输出样例',
   Add_Sample: '添加样例',
   Code_Template: '代码模板',
-  Special_Judge: 'Special Judge',
-  Use_Special_Judge: '使用 Special Judge',
+  Special_Judge: '特定判题',
+  Use_Special_Judge: '使用特定判题',
   Special_Judge_Code: 'Special Judge 代码',
   SPJ_language: 'SPJ 语言',
   Compile: '编译',
@@ -188,6 +188,7 @@ export const m = {
   Operation: '操作',
   Download_TestCase: '下载测试用例',
   Delete_Problem: '删除问题',
+  Confirm_delete_problem: '确定要删除此问题吗？关联的提交内容也将被删除。',
   Make_public: '设为公开',
   Add_From_Public_Problem: '从公共问题添加',
   Sure_to_update_the_problem: '确定要更新问题吗？',
@@ -204,7 +205,8 @@ export const m = {
   Compile_Error: '编译失败',
   Standard_IO: '标准IO',
   File_IO: '文件IO',
-
+  Sample: '样例',
+  Problem_Type: '类型',
 
   Sample_is_required: '样例为必填项',
   Sample_input_and_output_is_required: '样例输入与输出为必填项',
@@ -246,8 +248,6 @@ export const m = {
   Confirm: '确认',
   Add_the_problem: '添加问题',
 
-  // Announcement.vue
-  Create_Announcement: '创建公告',
 
     // Contest.vue
     Edit_Contest: '编辑比赛'

@@ -114,7 +114,7 @@
         </el-row>
         <div>
           <el-form-item v-for="(sample, index) in problem.samples" :key="'sample'+index">
-            <Accordion :title="'Sample' + (index + 1)">
+            <Accordion :title="$t('m.Sample') + (index + 1)">
               <el-button type="warning" size="small" icon="el-icon-delete" slot="header" @click="deleteSample(index)">
                 {{$t('m.Delete')}}
               </el-button>
@@ -187,7 +187,7 @@
         </el-form-item>
         <el-row :gutter="20">
           <el-col :span="4">
-            <el-form-item :label="$t('m.Type')">
+            <el-form-item :label="$t('m.Problem_Type')">
               <el-radio-group v-model="problem.rule_type" :disabled="disableRuleType">
                 <el-radio label="ACM">ACM</el-radio>
                 <el-radio label="OI">OI</el-radio>
@@ -203,7 +203,7 @@
                 :show-file-list="true"
                 :on-success="uploadSucceeded"
                 :on-error="uploadFailed">
-                <el-button size="small" type="primary" icon="el-icon-fa-upload">Choose File</el-button>
+                <el-button size="small" type="primary" icon="el-icon-fa-upload">{{$t('m.Choose_File')}}</el-button>
               </el-upload>
             </el-form-item>
           </el-col>

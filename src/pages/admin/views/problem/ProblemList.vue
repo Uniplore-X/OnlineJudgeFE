@@ -197,7 +197,7 @@
         })
       },
       deleteProblem (id) {
-        this.$confirm('Sure to delete this problem? The associated submissions will be deleted as well.', 'Delete Problem', {
+        this.$confirm(this.$t('m.Confirm_delete_problem'), this.$t('m.Delete_Problem'), {
           type: 'warning'
         }).then(() => {
           let funcName = this.routeName === 'problem-list' ? 'deleteProblem' : 'deleteContestProblem'

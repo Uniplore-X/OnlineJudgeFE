@@ -296,5 +296,8 @@ export const m = {
 
   // UserHome.vue
   Id_does_not_exist_click_the_button: '如果您发现以下问题id不存在,试着点击按钮',
-  regenerate: '重新生成'
+  regenerate: '重新生成',
+
+  // ProblemList.vue
+  Keyword: '关键词'
 }
