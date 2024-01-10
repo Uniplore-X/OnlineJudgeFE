@@ -146,12 +146,15 @@ export const m = {
   Import_All: '全部导入',
   Reset_Data: '重置数据',
   Cancel: '取消',
+  Confirm_delete_user: '确定要删除该用户吗？由该用户创建的相关资源也将被删除，如问题、竞赛、公告等。',
 
   // general/Announcement.vue
   LastUpdateTime: '最后更新时间',
   Author: '作者',
   Create: '创建',
   Create_Announcement: '创建公告',
+  Warning: '警告',
+  Confirm_delete_announcement: '是否确定删除此公告？',
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: '请先设置SMTP配置',
@@ -242,6 +245,7 @@ export const m = {
   Upgrade_latest_enjoy: '请升级到最新版本以享受新功能',
   New_Version: '新版本',
   Details: '详情',
+  Reference: '参考链接',
 
   // AddPublicProblem.vue
   Input_display_ID: '请输入竞赛题的显示ID',

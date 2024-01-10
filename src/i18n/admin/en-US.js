@@ -139,10 +139,13 @@ export const m = {
   Generate_and_Export: 'Generate & Export',
   Import_All: 'Import All',
   Reset_Data: 'Reset Data',
+  Confirm_delete_user: 'Sure to delete the user? The associated resources created by this user will be deleted as well, like problem, contest, announcement, etc.',
 
   // general/Announcement.vue
   LastUpdateTime: 'LastUpdateTime',
   Create_Announcement: 'Create Announcement',
+  Warning: 'Warning',
+  Confirm_delete_announcement: 'Are you sure you want to delete this announcement?',
 
   // Conf.vue
   Please_setup_SMTP_config_at_first: 'Please setup SMTP config at first',
@@ -243,6 +246,7 @@ export const m = {
   Upgrade_latest_enjoy: 'Please upgrade to the latest version to enjoy the new features.',
   New_Version: 'New Version',
   Details: 'Details',
+  Reference: 'Reference',
 
 // AddPublicProblem.vue
 Input_display_ID: 'Please input display id for the contest problem',

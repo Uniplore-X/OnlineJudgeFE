@@ -212,9 +212,9 @@
       },
       // 删除公告
       deleteAnnouncement (announcementId) {
-        this.$confirm('Are you sure you want to delete this announcement?', 'Warning', {
-          confirmButtonText: 'Delete',
-          cancelButtonText: 'Cancel',
+        this.$confirm($t('m.Confirm_delete_announcement'), $t('m.Warning'), {
+          confirmButtonText: $t('m.Delete'),
+          cancelButtonText: $t('m.Cancel'),
           type: 'warning'
         }).then(() => {
           // then 为确定

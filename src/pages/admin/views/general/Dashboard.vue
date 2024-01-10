@@ -64,7 +64,7 @@
         <el-popover placement="right" trigger="hover">
           <i slot="reference" class="el-icon-fa-question-circle import-user-icon"></i>
           <p>{{$t('m.Upgrade_latest_enjoy')}}</p>
-          <p>Reference: <a href="http://docs.onlinejudge.me/#/onlinejudge/guide/upgrade" target="_blank">
+          <p>{{$t('m.Reference')}}: <a href="http://docs.onlinejudge.me/#/onlinejudge/guide/upgrade" target="_blank">
           http://docs.onlinejudge.me/#/onlinejudge/guide/upgrade</a>
           </p>
         </el-popover>

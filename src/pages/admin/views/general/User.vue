@@ -328,7 +328,7 @@
         })
       },
       deleteUsers (ids) {
-        this.$confirm('Sure to delete the user? The associated resources created by this user will be deleted as well, like problem, contest, announcement, etc.', 'confirm', {
+        this.$confirm($t('m.Confirm_delete_user'), $t('m.Confirm'), {
           type: 'warning'
         }).then(() => {
           api.deleteUsers(ids.join(',')).then(res => {
