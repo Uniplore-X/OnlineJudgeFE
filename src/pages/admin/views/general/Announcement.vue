@@ -208,13 +208,13 @@
         api[funcName](data).then(res => {
           this.showEditAnnouncementDialog = false
           this.init()
-        }).catch()
+        }).catch()s
       },
       // 删除公告
       deleteAnnouncement (announcementId) {
-        this.$confirm($t('m.Confirm_delete_announcement'), $t('m.Warning'), {
-          confirmButtonText: $t('m.Delete'),
-          cancelButtonText: $t('m.Cancel'),
+        this.$confirm(this.$t('m.Confirm_delete_announcement'), this.$t('m.Warning'), {
+          confirmButtonText: this.$t('m.Delete'),
+          cancelButtonText: this.$t('m.Cancel'),
           type: 'warning'
         }).then(() => {
           // then 为确定

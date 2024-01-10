@@ -328,7 +328,7 @@
         })
       },
       deleteUsers (ids) {
-        this.$confirm($t('m.Confirm_delete_user'), $t('m.Confirm'), {
+        this.$confirm(this.$t('m.Confirm_delete_user'), this.$t('m.Confirm'), {
           type: 'warning'
         }).then(() => {
           api.deleteUsers(ids.join(',')).then(res => {
