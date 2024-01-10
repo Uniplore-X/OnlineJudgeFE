@@ -208,7 +208,7 @@
         api[funcName](data).then(res => {
           this.showEditAnnouncementDialog = false
           this.init()
-        }).catch()s
+        }).catch()
       },
       // 删除公告
       deleteAnnouncement (announcementId) {
