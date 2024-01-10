@@ -31,7 +31,7 @@ router.beforeEach((to, from, next) => {
 //      next({
 //        name: 'home'
 //      })
-      if (labploreLogin() === false) {
+      if (!labploreLogin()) {
         store.commit(types.CHANGE_MODAL_STATUS, {mode: 'login', visible: true})
         next({
           name: 'home'

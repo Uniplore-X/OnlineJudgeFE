@@ -50,7 +50,7 @@ export const m = {
   Auto_Refresh: 'Auto Refresh',
   RealName: 'RealName',
   Force_Update: 'Force Update',
-  download_csv: 'download csv',
+  download_csv: 'export data',
   TotalTime: 'TotalTime',
   Top_10_Teams: 'Top 10 Teams',
   save_as_image: 'save as image',

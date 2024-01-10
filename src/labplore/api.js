@@ -8,6 +8,11 @@ axios.defaults.headers.common['Cache-Control'] = 'no-cache'
 
 export function labploreLogin () {
   redirectWplogin()
+  return process.env.LABPLORE_MODE === true
+}
+
+export function isLabploreMode () {
+  return process.env.LABPLORE_MODE === true
 }
 
 export function checkLogin (relogin = false) {

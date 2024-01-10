@@ -3,6 +3,7 @@ import api from '@oj/api'
 import storage from '@/utils/storage'
 import i18n from '@/i18n'
 import { STORAGE_KEY, USER_TYPE, PROBLEM_PERMISSION } from '@/utils/constants'
+import { isLabploreMode } from '@/labplore/api'
 
 const state = {
   profile: {}
@@ -23,6 +24,9 @@ const getters = {
   },
   hasProblemPermission: (state, getters) => {
     return getters.user.problem_permission !== PROBLEM_PERMISSION.NONE
+  },
+  isLabploreMode: (state, getters) => {
+    return isLabploreMode()
   }
 }
 

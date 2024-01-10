@@ -327,7 +327,7 @@ function ajax (url, method, options) {
         // // 若后端返回为登录，则为session失效，应退出当前登录用户
         if (res.data.data.startsWith('Please login')) {
           // router.push({name: 'login'})
-          if (labploreLogin() === false) {
+          if (!labploreLogin()) {
             router.push({name: 'login'})
           }
         }

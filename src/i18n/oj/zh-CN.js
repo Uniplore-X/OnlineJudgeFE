@@ -50,7 +50,7 @@ export const m = {
   Auto_Refresh: '自动刷新',
   RealName: '真名',
   Force_Update: '强制刷新',
-  download_csv: '下载 csv',
+  download_csv: '导出数据',
   TotalTime: '总时间',
   Top_10_Teams: '前 10 强队伍',
   save_as_image: '保存图片',

@@ -50,7 +50,7 @@ export const m = {
   Auto_Refresh: '自動重新載入',
   RealName: '真實名稱',
   Force_Update: '強制重新載入',
-  download_csv: '下載csv檔',
+  download_csv: '導出數據',
   TotalTime: '總時間',
   Top_10_Teams: '前10名隊伍',
   save_as_image: '保存圖片',

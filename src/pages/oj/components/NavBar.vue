@@ -42,7 +42,7 @@
           {{$t('m.FAQ')}}
         </Menu-item>
       </Submenu>
-      <template v-if="!isAuthenticated">
+      <template v-if="!isAuthenticated && !isLabploreMode">
         <div class="btn-menu">
           <Button type="ghost"
                   ref="loginBtn"
@@ -65,9 +65,9 @@
           <Dropdown-menu slot="list">
             <Dropdown-item name="/user-home">{{$t('m.MyHome')}}</Dropdown-item>
             <Dropdown-item name="/status?myself=1">{{$t('m.MySubmissions')}}</Dropdown-item>
-            <Dropdown-item name="/setting/profile">{{$t('m.Settings')}}</Dropdown-item>
+            <Dropdown-item v-if="!isLabploreMode" name="/setting/profile">{{$t('m.Settings')}}</Dropdown-item>
             <Dropdown-item v-if="isAdminRole" name="/admin">{{$t('m.Management')}}</Dropdown-item>
-            <Dropdown-item divided name="/logout">{{$t('m.Logout')}}</Dropdown-item>
+            <Dropdown-item v-if="!isLabploreMode" divided name="/logout">{{$t('m.Logout')}}</Dropdown-item>
           </Dropdown-menu>
         </Dropdown>
       </template>
@@ -104,7 +104,7 @@
         }
       },
       handleBtnClick (mode) {
-        if (mode !== 'login' || labploreLogin() === false) {
+        if (mode !== 'login' || !labploreLogin()) {
           this.changeModalStatus({
             visible: true,
             mode: mode
@@ -113,7 +113,7 @@
       }
     },
     computed: {
-      ...mapGetters(['website', 'modalStatus', 'user', 'isAuthenticated', 'isAdminRole']),
+      ...mapGetters(['website', 'modalStatus', 'user', 'isAuthenticated', 'isAdminRole', 'isLabploreMode']),
       // 跟随路由变化
       activeMenu () {
         return '/' + this.$route.path.split('/')[1]
