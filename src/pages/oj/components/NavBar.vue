@@ -2,6 +2,9 @@
   <div id="header">
     <Menu theme="light" mode="horizontal" @on-select="handleRoute" :active-name="activeMenu" class="oj-menu">
       <div class="logo"><span>{{website.website_name}}</span></div>
+      <div class="labplore-home" @click="goToLabploreHome">
+        <template v-if="isLabploreMode">{{website.labplore_home_title}}</template>
+      </div>
       <Menu-item name="/">
         <Icon type="home"></Icon>
         {{$t('m.Home')}}
@@ -57,7 +60,7 @@
           </Button>
         </div>
       </template>
-      <template v-else>
+      <template v-else-if="isAuthenticated">
         <Dropdown class="drop-menu" @on-click="handleRoute" placement="bottom" trigger="click">
           <Button type="text" class="drop-menu-title">{{ user.username }}
             <Icon type="arrow-down-b"></Icon>
@@ -110,6 +113,11 @@
             mode: mode
           })
         }
+      },
+      goToLabploreHome () {
+        if (this.website.labplore_home_url) {
+          window.location.href = this.website.labplore_home_url
+        }
       }
     },
     computed: {
@@ -147,10 +155,20 @@
 
     .logo {
       margin-left: 2%;
-      margin-right: 2%;
+      // margin-right: 2%;
       font-size: 20px;
       float: left;
       line-height: 60px;
+    }
+
+    .labplore-home {
+      float: left;
+      margin-left: 15px;
+      margin-right: 2%;
+      min-width: 1px;
+      min-height: 1px;
+      color: #0071dc;
+      cursor: pointer;
     }
 
     .drop-menu {
