@@ -2,7 +2,7 @@
   <div>
     <el-input
       v-model="keyword"
-      placeholder="Keywords"
+      :placeholder="$t('m.Keywords')"
       prefix-icon="el-icon-search">
     </el-input>
     <el-table :data="problems" v-loading="loading">
@@ -12,16 +12,16 @@
         prop="id">
       </el-table-column>
       <el-table-column
-        label="DisplayID"
+        :label="$t('m.DisplayID')"
         width="200"
         prop="_id">
       </el-table-column>
       <el-table-column
-        label="Title"
+        :label="$t('m.Title')"
         prop="title">
       </el-table-column>
       <el-table-column
-        label="option"
+        :label="$t('m.Option')"
         align="center"
         width="100"
         fixed="right">

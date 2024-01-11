@@ -192,10 +192,10 @@ export const m = {
   Download_TestCase: '下载测试用例',
   Delete_Problem: '删除问题',
   Confirm_delete_problem: '确定要删除此问题吗？关联的提交内容也将被删除。',
-  Make_public: '设为公开',
+  Make_Public: '设为公开',
   Add_From_Public_Problem: '从公共问题添加',
   Sure_to_update_the_problem: '确定要更新问题吗？',
-  Add_Contest_Problem: 'Add Contest Problem',
+  Add_Contest_Problem: '添加竞赛题',
 
   // Problem.vue
   Display_ID_is_required: '显示ID为必填项',
@@ -246,13 +246,16 @@ export const m = {
   New_Version: '新版本',
   Details: '详情',
   Reference: '参考链接',
+  Time: '时间',
+  OS: '系统',
+  Browser: '浏览器',
+
 
   // AddPublicProblem.vue
   Input_display_ID: '请输入竞赛题的显示ID',
   Confirm: '确认',
   Add_the_problem: '添加问题',
 
-
-    // Contest.vue
-    Edit_Contest: '编辑比赛'
+  // Contest.vue
+  Edit_Contest: '编辑比赛'
 }

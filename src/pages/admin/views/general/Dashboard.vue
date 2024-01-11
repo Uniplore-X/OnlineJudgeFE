@@ -15,16 +15,16 @@
         <div class="last-info">
           <p class="last-info-title">{{$t('m.Last_Login')}}</p>
           <el-form label-width="80px" class="last-info-body">
-            <el-form-item label="Time:">
+            <el-form-item :label="$t('m.Time')+':'">
               <span>{{session.last_activity | localtime}}</span>
             </el-form-item>
             <el-form-item label="IP:">
               <span>{{session.ip}}</span>
             </el-form-item>
-            <el-form-item label="OS">
+            <el-form-item :label="$t('m.OS')+':'">
               <span>{{os}}</span>
             </el-form-item>
-            <el-form-item label="Browser:">
+            <el-form-item :label="$t('m.Browser')+':'">
               <span>{{browser}}</span>
             </el-form-item>
           </el-form>

@@ -286,7 +286,7 @@ export const m = {
   // setting/children/SecuritySetting.vue
   Current: '当前',
   Revoke: '撤销',
-  OS: '操作系统',
+  OS: '系统',
   Browser: '浏览器',
   Last_Activity: '上一次登录',
   Enter_the_code_from_your_application: '输入来自您的应用程序的代码',

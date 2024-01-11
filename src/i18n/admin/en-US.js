@@ -189,7 +189,7 @@ export const m = {
   Download_TestCase: 'Download TestCase',
   Delete_Problem: 'Delete Problem',
   Confirm_delete_problem: 'Sure to delete this problem? The associated submissions will be deleted as well.',
-  Make_public: 'Make public',
+  Make_Public: 'Make Public',
   Create: 'Create',
   Add_From_Public_Problem: 'Add From Public Problem',
   Sure_to_update_the_problem: 'Sure to update the problem?',
@@ -247,6 +247,9 @@ export const m = {
   New_Version: 'New Version',
   Details: 'Details',
   Reference: 'Reference',
+  Time: 'Time',
+  OS: 'OS',
+  Browser: 'Browser',
 
 // AddPublicProblem.vue
 Input_display_ID: 'Please input display id for the contest problem',
