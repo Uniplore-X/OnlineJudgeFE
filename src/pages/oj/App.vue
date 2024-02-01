@@ -7,8 +7,8 @@
       </transition>
       <div class="footer">
         <p v-html="website.website_footer"></p>
-        <p>Powered by <a href="https://github.com/QingdaoU/OnlineJudge">OnlineJudge</a>
-          <span v-if="version">&nbsp; Version: {{ version }}</span>
+        <p>{{$t('m.Powered_by')}} <a href="https://github.com/Uniplore-X/OnlineJudge">{{$t('m.OnlineJudge')}}</a>
+          <span v-if="version">&nbsp; {{$t('m.Version')}}:{{ version }}</span>
         </p>
       </div>
     </div>

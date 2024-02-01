@@ -298,6 +298,11 @@ export const m = {
   regenerate: 'regenerate',
 
   // ProblemList.vue
-  Keyword: 'Keyword'
+  Keyword: 'Keyword',
+
+  // App.vue
+  Version: 'Version',
+  Powered_by:'Powered by',
+  OnlineJudge: 'Uniplore'
 
 }

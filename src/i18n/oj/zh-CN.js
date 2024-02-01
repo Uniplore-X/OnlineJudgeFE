@@ -299,5 +299,10 @@ export const m = {
   regenerate: '重新生成',
 
   // ProblemList.vue
-  Keyword: '关键词'
+  Keyword: '关键词',
+
+  // App.vue
+  Version: '版本',
+  Powered_by:'技术支持',
+  OnlineJudge: '优联博睿'
 }
